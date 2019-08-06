@@ -1,0 +1,25 @@
+{
+  "name": "teamproject",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-fileupload": "^1.1.5",
+    "express-session": "^1.16.2",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.6.1",
+    "morgan": "~1.9.1",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^2.0.0",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,27 @@
+<%- include('header'); -%>
+<%- include('navbar'); -%>
+
+    <div class="jumbotron">
+        <h1>Quiz 3</h1>
+        <p>recipes answer for quiz 3
+           </p>
+    </div>
+
+    <form method="post" action="/processRecipexForm">
+      Dish Name: <input type="text" id="dishName" name="dishName"> <br>
+      Ingredients: <input type="text" id="ingredients" name="ingredients"> <br>
+      Instructions:<input type="text" id="instructions" name="instructions"> <br>
+      <br>
+      <input class="btn btn-lg btn-warning" type="submit">
+    </form>
+
+    <ol>
+        <% for(i = 0; i<recipex.length; i++){  %>
+            <li>
+                  <b>    <%= recipex[i].dishName %> </b>
+                         <%= recipex[i].ingredients %> <br>
+                         <%= recipex[i].instructions %> <br>
+                  <i>    <%= recipex[i].createdAt %> </i>
+            </li>
+        <% } %>
+        </ol>

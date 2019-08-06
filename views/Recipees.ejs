@@ -1,0 +1,57 @@
+<%- include('header') -%>
+
+<img src="/">
+<div class="container">
+<form method="post" action="/recipees">
+  <label for="Input1">Dish Name</label>
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="DishName" name="DishName">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Ingredients" name="Ingredients">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Description" name="Description">
+    </div>
+
+  </div>
+
+
+  <input class="btn btn-primary" type="Submit" value="Submit">
+</form>
+</div>
+<hr>
+
+<div class="container">
+
+<form method="post" action="/recipeesDelete">
+        <input type="submit" value="delete marked">
+        <ol>
+        <% for(i = 0; i<posts.length; i++){  %>
+            <li> <a href="/showPost/<%= posts[i]._id %>">
+                  <%= posts[i].userName %></a>
+                  <i>
+                 <%= posts[i].createdAt %></\/i> <br>
+                 </i>
+                 <%= posts[i].DishName %><br>
+                 <%= posts[i].Ingredients %><br>
+                 <%= posts[i].Description %><br>
+
+                 <% console.dir([posts[i].userId,user._id]) %>
+                 <% if (posts[i].userId.equals(user._id)) { %>
+                     <input type="checkbox" name="delete" value="<%= posts[i]._id %>">
+                 <% } %>
+                 <pre><%= posts[i].post %></pre>
+
+             </li>
+        <% } %>
+        </ol>
+
+    </form>
+    </div>
+
+
+
+
+<%- include('bootfooter') -%>

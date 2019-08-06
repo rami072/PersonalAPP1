@@ -1,0 +1,139 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1,h4{
+  color: white;
+}
+
+#cardStyle{
+  background-color: #d10d0d;
+  width: 50%;
+}
+
+.container{
+  margin-top: -32px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: white;
+  /* border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black; */
+}
+
+#profilePic{
+  object-fit: cover;
+  object-position: center;
+  width: 40px;
+  height: 40px;
+}
+
+/* welcome tags and titles */
+#welcome{
+  padding-left: 9%;
+}
+
+/* forum question description */
+#description{
+  padding-left: 2%;
+}
+
+/* fix btn margin problem */
+#loginBtn{
+  margin-left: 9%;
+}
+
+/* show full-page view */
+#superView{
+  margin-left: 0;
+  margin-right: 0;
+  position: absolute;
+  height: 95%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+#showQuestions{
+  background-color: #F5F4F0;
+}
+
+/* navbar position and settings */
+.navbar{
+  border-bottom: 2px solid white;
+  font-size: 18px;
+  font-style: violet;
+  background-color: #d10d0d;
+}
+
+/* change color of nav links */
+.nav-link{
+  color: white;
+}
+
+#customize{
+  background-color: #F5F4F0;
+}
+
+#FAQ{
+  color: grey;
+}
+
+#FAQ a:hover{
+  color: white;
+  background-color: blue;
+}
+
+/* @media (min-width: 1200px) {
+    .container{
+        max-width: 1500px;
+} */
+
+li.nav-item a:hover{
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.navbar-brand{
+  font-size: 28px;
+  color: white;
+}
+
+a.navbar-brand:hover{
+  color: white;
+}
+
+.navbar-toggler{
+  color: white;
+}
+
+.page-footer{
+  color: white;
+  font-size: 16px;
+  font-style: white;
+  background-color: #d10d0d;
+}
+
+.profile-image{
+  border: 2px solid white;
+}
+
+.jumbotron.masthead {
+  padding-top: 150px;
+  background-image: url("https://www.gameprime.org/wp-content/uploads/2018/04/https_2F2Fblueprint-api-production.s3.amazonaws.com2Fuploads2Fstory2Fthumbnail2F399082F58c59a98-4b9b-4232-9fa7-e6f81d35f67c.jpg");
+  /* background-color: black; */
+  /* border-bottom: 5px solid #007bff; */
+  height: 300px;
+  /* center the image */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.form b {
+  padding-top: 300px;
+}
+#north{
+  background-image: url("../../images/north.jpg");
+}

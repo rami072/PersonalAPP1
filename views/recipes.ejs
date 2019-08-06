@@ -1,0 +1,43 @@
+<%- include('header'); -%>
+<%- include('navbar'); -%>
+
+<div class="jumbotron masthead text-center" id="/">
+  <h1>Quiz 3 Answer!</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <form method="post" action="/processRecipesPost">
+            <div class="form-group">
+              <h5 class="card-header">Dish Name</h5>
+              <input type="text" class="form-control" id="dishName" name="dishName"> <br>
+            </div>
+            <div class="form-group">
+              <h5 class="card-header">Ingredients</h5>
+              <input type="text" class="form-control" id="ingredients" name="ingredients"> <br>
+            </div>
+            <div class="form-group">
+              <h5 class="card-header">Instructions</h5>
+            <input type="text" class="form-control" id="instructions" name="instructions"> <br>
+            <input class="btn btn-primary" type="submit">
+          </form>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<ol>
+<% for(i = 0; i<recipes.length; i++){  %>
+          <li>
+                <b>    <%= recipes[i].dishName %> </b>
+                Rating:<%= recipes[i].ingredients %>    <br>
+                       <%= recipes[i].createdAt %> <br>
+                <i>    <%= recipes[i].instructions %>    </i>
+          </li>
+      <% } %>
+      </ol>

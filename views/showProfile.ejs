@@ -1,0 +1,48 @@
+<%- include('header'); -%>
+<%- include('navbar'); -%>
+
+<div class="jumbotron masthead text-center parallax">
+  <h1><i><%= profile.userName %>'s</i> Profile</h1>
+  <br>
+</div>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-sm-4">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Username</span>
+        <input disabled type="text" class="form-control" value="<%=profile.userName%>">
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Email</span>
+        <input disabled type="text" class="form-control" value="<%=profile.googleemail%>">
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Status</span>
+        <input disabled type="text" class="form-control" value="<%=user.status%>">
+      </div>
+    </div>
+
+    <div class="w-100"></div>
+
+    <br>
+
+    <div class="col-sm-4">
+      <span class="input-group-text">Profile image</span>
+      <br>
+      <img src="<%=profile.profilePicURL%>" width = "100%" alt="profile picture">
+    </div>
+
+
+  </div>
+
+</div>
+<%- include('footer'); -%>

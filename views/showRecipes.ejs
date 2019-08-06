@@ -1,0 +1,30 @@
+<%- include('header') -%>
+<%- include('navbar') -%>
+
+<div class="jumbotron masthead text-center" id="/">
+  <h1>Recipes</h1>
+  <br>
+</div>
+<div class="container">
+
+  <div class="row">
+
+    <div class="col">
+      <% for (i = 0; i<recipes.length; i++){  %>
+      <div class="card"  id="showRecipes">
+        <div class="card-body">
+            <a class = "lead" href="/recipes/<%=recipes[i]._id%>"><%= recipes[i].recipes%></a>
+            <br><br>
+            <h6>By <%=recipes[i].userId%></h6>
+            <h6><%=recipes[i].createdAt%></h6>
+        </div>
+      </div>
+      <br>
+      <% } %>
+    </div>
+
+  </div>
+
+</div>
+
+<%- include('footer') -%>
